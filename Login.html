@@ -1,0 +1,74 @@
+<?php
+$host="locahost"
+$user="SelmerClassicCars"
+$password="."
+$db="Users"
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Selmer Classic Cars - Employee Log-In</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Fira+Sans+Extra+Condensed|Fjalla+One|Patua+One|Yantramanav" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<header>
+  <h1>Selmer Classic Cars</h1>
+  <h2>Employee Log-In Page</h2>
+</header>
+
+<body>
+  <p>Note: This log-in page is specifically for the Selmer Classic Cars staff.</p>
+  <form class="form-signin" role="form" method="post">
+    <form action="" method="post">
+
+      </br>
+      <p5></p5>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="" required id="username"> </br>
+      </br>
+      <p6></p6>
+      <label for="pass"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pass" required id="password"> </br>
+      <p>
+        <a class="login_button" value="Login" id="submit" onclick="validate()">Log In</a>
+      </p>
+
+      <script>
+        var attempt = 3;
+
+        function validate() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          if (username == "SelmerCars18" && password == "classic9294") {
+            alert("Login successful!");
+            window.location = "index.html";
+            return false;
+          } else {
+            attempt--; // Decrementing by one.
+            alert("You have " + attempt + " attempt(s) left.");
+            // Disabling fields after 3 attempts.
+            if (attempt == 0) {
+              document.getElementById("username").disabled = true;
+              document.getElementById("password").disabled = true;
+              document.getElementById("submit").disabled = true;
+              return false;
+            }
+          }
+        }
+      </script>
+    </form>
+</body>
+<footer>
+  <br>
+  </br>
+<br>
+</br>
+<br>
+  </br>
+  <a href="./index.html" class="home"><i class="fas fa-home"></i></a>
+</footer>
+
+</html>
