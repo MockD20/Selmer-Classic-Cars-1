@@ -5,7 +5,7 @@ $password="."
 $db="Users"
 mySQL_connect($host,$user,$password);
 mySQL_select_db($db);
-if(isset(['username'])){
+if(isset($_post['username'])){
     $uname=$_post['username'];
     $password=$_post['password'];
     $sql= 'Select * from Login where username='".$uname."' AND password='".$password."' limit 1';
