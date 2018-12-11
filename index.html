@@ -1,0 +1,92 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Selmer Classic Cars</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Fira+Sans+Extra+Condensed|Fjalla+One|Patua+One|Yantramanav" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <nav class="menu">
+         <img src="https://i.ibb.co/T2T0B6Q/logo1a.png" alt="Selmer Classic Cars Logo" border="0" class="coollogo">
+
+    <a href="./aboutme.html" class="aboutme"><i class="fas fa-portrait"></i>  <strong>Contact Us</strong></a>
+  </nav>
+
+
+</head>
+<header>
+  </br>
+  </br>
+
+  <h1 class="title">Selmer C<a class="classic" href="./login.html">l</a>assic Cars</h1>
+
+  <h4>652 Mulberry Avenue, Selmer, TN 38375</h4>
+  <div class="topnav">
+     <p>All Vehicles</p>
+    <a href="./cars.html" class="cars"><i id="cars"class="fas fa-car-side"></i>  Cars</a>
+    <a href="./trucks.html" class="trucks"><i id="cars" class="fas fa-truck-pickup"></i>  Trucks</a>
+    <a href="./suvs.html" class="suvs"><i id="cars"class="fas fa-shuttle-van"></i>  SUVs</a>
+    <a href="./other.html" class="other"><i id="cars" class="fas fa-truck"></i>  Other</a>
+  </div>
+  <h2>Home Page</h2>
+</header>
+
+<body>
+  <div class="row">
+  <div class="column">
+    <div class="content">
+      <a href="https://ibb.co/q0qjwX0"><img src="https://i.ibb.co/hXQ9vhX/Capture.png" alt="Two cars." border="0" class="twocars"></a>
+      <h3>Our Cars</h3>
+      <p class="list">Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <a href="https://ibb.co/TwkZQYK"><img src="https://i.ibb.co/qDdzH70/screencapture-earth-google-web-35-15305869-88-57697897-146-20211792a-0d-21-00045843y-76-66550572h-88-42442447t-0r-data-Cg-Ai-Ggo-WRl-ZRODRJemt-DX29p-ZVMy-Sjd-LQXY4-URAC-2018-12-10-08-35-06.png" alt="Store Front" border="0" class="dealership"></a>
+      <h3>Our Dealership</h3>
+      <p class="list">Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <a href="https://ibb.co/K7TPBxv"><img src="https://i.ibb.co/Dk0Jmf2/Capture2.png" alt="Capture2" border="0" class="carline"></a>
+  <h3>Your Selection</h3>
+  <p class="list">Lorem ipsum..</p>
+</div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  </body>
+   <div class="images">
+  <img src="https://www.freeiconspng.com/uploads/car-silhouet-png-32.png"></img>
+  </div> 
+<footer>
+ 
+  <a href="./login.html" class="login">Employee Log-In</a>
+   <div class="validation">
+     <style>
+       color: white;
+       z-index: 10;
+     </style>
+  <?php
+echo $_SESSION["username"];
+color: white;
+?>
+  <h1 class="bottom">Selmer C<a class="classic2" href="./login.html">l</a>assic Cars</h1>
+     <h5 class="phone">|  <i class="fas fa-phone"></i> (731) 645 - 4818  |</h5>
+    <!-- Add font awesome icons -->
+<a href="https://www.facebook.com › Places › Selmer, Tennessee › Recreational Vehicle Dealership" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>
+</footer>
+
+</html>
