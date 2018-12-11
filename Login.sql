@@ -5,4 +5,4 @@ Create Table Login  (
 );
 Insert Into Login   (Username, Password)
 values ('SelmerCars18', 'classic9294')
-SELECT * FROM 'Login'
+SELECT * FROM 'Login';
