@@ -3,6 +3,21 @@ $host="locahost"
 $user="SelmerClassicCars"
 $password="."
 $db="Users"
+mySQL_connect($host,$user,$password);
+mySQL_select_db($db);
+if(isset(['username'])){
+    $uname=$_post['username'];
+    $password=$_post['password'];
+    $sql= 'Select * from Login where username='".$uname."' AND password='".$password."' limit 1';
+    $result=mysql_query($sql);
+    if(mysql_num_rows($result)==1){
+    exit();
+     }
+    else {
+    echo "Login failed"
+    exit();
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
